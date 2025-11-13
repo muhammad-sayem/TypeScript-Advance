@@ -63,5 +63,8 @@ const student2 = {
   hasBike: true
 }
 
+const result1 = addStudentToCourse(student1);
+const result2 = addStudentToCourse(student2);
+
 console.log("Student 1: ", student1);
 console.log("Student 2: ", student2);
