@@ -1,3 +1,23 @@
+interface ApiResponse<T> {
+  status: number;
+  type: string;
+  data: T
+}
+
+const response1: ApiResponse<object> = {
+  status: 200,
+  type: "Success",
+  data: {
+    name: "Sayem",
+    id: 1000001
+  }
+  // data: "Congratulations!!"
+}
+
+console.log(response1.data);
+
+// ---------------------------------------------- //
+
 interface Developer<T, X = null> {  // By default null if anyone has no bike 
   name: string;
   salary: number;

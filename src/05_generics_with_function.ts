@@ -1,3 +1,18 @@
+const addId = <T extends {name: string, age: number}>(obj: T) => {
+  const id = Math.floor(Math.random() * 100);
+  return { ...obj, id }
+}
+
+const user1 = {
+  name: "Sayem",
+  age: 24,
+  country: "Bangladesh"
+}
+
+console.log(addId(user1));
+
+// --------------------------------------- //
+
 const createArrayWithString = (value: string) => {
   return [value]
 }
